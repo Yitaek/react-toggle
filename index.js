@@ -8,10 +8,6 @@ var React = _interopRequire(require("react"));
 
 var classNames = _interopRequire(require("classnames"));
 
-var Check = _interopRequire(require("./check"));
-
-var X = _interopRequire(require("./x"));
-
 var PureRenderMixin = _interopRequire(require("react-addons-pure-render-mixin"));
 
 module.exports = React.createClass({
@@ -83,17 +79,7 @@ module.exports = React.createClass({
       { className: classes, onClick: this.handleClick },
       React.createElement(
         "div",
-        { className: "react-toggle-track" },
-        React.createElement(
-          "div",
-          { className: "react-toggle-track-check" },
-          React.createElement(Check, null)
-        ),
-        React.createElement(
-          "div",
-          { className: "react-toggle-track-x" },
-          React.createElement(X, null)
-        )
+        { className: "react-toggle-track" }
       ),
       React.createElement("div", { className: "react-toggle-thumb" }),
       React.createElement("input", _extends({
